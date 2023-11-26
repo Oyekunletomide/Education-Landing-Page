@@ -1,0 +1,993 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Big+Shoulders+Text:wght@400;500;600;700;800;900&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'MyFont';
+    src: url('./JimNightshade-Regular.ttf') format('truetype');
+  }
+
+*{
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    /* list-style: none; */
+}
+
+
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 124px;
+    width: 100%;
+    background: #F9E0AE;
+}
+label.logo {
+    width: 135px;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+nav li {
+    list-style: none;
+}
+nav a {
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+a.active,a:hover {
+    border: 1px solid rgb(219, 72, 72);
+    transition: .5s;
+}
+nav #icon {
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    float: right;
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.checkButton {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.myCheckbox {
+    display: none;
+}
+.contact-us {
+    display: flex;
+    width: 150px;
+    height: 39px;
+    border-radius: 10px;
+    background: #C24914;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.contact-us:hover {
+    background-color: rgb(155, 181, 58);
+}
+
+@media (max-width: 952px) {
+    nav ul {
+        flex-direction: column;
+        
+    }
+    nav a {
+        font-size: 17px;
+    }
+    .menu-icon {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 952px) {
+    .checkButton {
+        display: block;
+    }
+    nav ul {
+        justify-content: left;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2f3640;
+        top: 124px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        z-index: 1;
+    }
+    nav li {
+        display: block;
+        margin: 20px 0;
+        line-height: 30px;
+    }
+    a.active,a:hover {
+        border: none;
+        color: #3498db;
+    }
+    .myCheckbox:checked ~ ul {
+        left: 0;
+    }
+    nav ul.show {
+        left: 0;
+    }
+}
+
+
+
+
+
+
+.first-section-div-first-text-div {
+    width: 400px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 65px;
+}
+.first-section-div-second-text-div {
+    width: 440px;
+    color: rgba(0, 0, 0, 0.46);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 34px;
+}
+.first-section-btn {
+    width: 200px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #682C0E;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+    cursor: pointer;
+}
+.first-section-btn:hover {
+    background-color: rgb(155, 181, 58);
+}
+.first-section-baby {
+    width: 487px;
+    height: 487px;
+    flex-shrink: 0;
+    background: url("./baby.png"), lightgray 50% / cover no-repeat;
+}
+.first-section {
+    width: 100%;
+    height: 487px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 72px;
+}
+.second-section {
+    width: 100%;
+    height: 487px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 235px;
+}
+.third-section {
+    width: 100%;
+    height: 487px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    margin-top: 234px;
+}
+section {
+    width: 100%;
+    height: 487px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+}
+.second-section-girl {
+    width: 480px;
+    height: 379px;
+    flex-shrink: 0;
+    background: url("./headphone-girl.png"), lightgray 50% / cover no-repeat;
+}
+.second-section-div-first-text-div{
+    width: 407px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 65px;
+}
+.second-section-div-girl {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: center;
+    color: #000;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    
+}
+.list {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.third-section-div-first-text-div {
+    width: 530px;
+    flex-shrink: 0;
+    color: #000;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.third-section-girl {
+    width: 439.314px;
+    height: 292.642px;
+    flex-shrink: 0;
+    background: url("./yoga-girl.png"), lightgray 50% / cover no-repeat;
+}
+input {
+    width: 300px;
+    /* height: 63px; */
+    padding: 15px;
+    background: #FFF;
+    border: none;
+    margin-left: 45px;
+}
+.subscribe-btn {
+    width: 300px;
+    padding: 15px;
+    flex-shrink: 0;
+    background: #C24914;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: none;
+    margin-left: 45px;
+    cursor: pointer;
+}
+.subscribe-btn:hover {
+    background-color: rgb(155, 181, 58);
+}
+.newsletter {
+    width: 100%;
+    height: 140px;
+    background: #F9E0AE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 109.36px;
+}
+footer {
+    width: 100%;
+    height: 200px;
+    background: #F9E0AE;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 98px;
+}
+.footer-align {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.follow-us-div, .useful-link-div, .contacts-div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    align-self: flex-start;
+}
+.follow-us-div > p, .useful-link-div > p, .contacts-div > p {
+    color: #000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+.useful-link-div > ul {
+    color: #6C6C6C;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+}
+.twitter:hover,.insta:hover,.linked:hover,.facebook:hover  {
+    cursor: pointer;
+    background: #FC8621;
+}
+li:hover, .contacts-div > a:hover {
+    color: #FC8621;
+    cursor: pointer;
+}
+.community{
+    width: 100%;
+    height: 780px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 206px;
+}
+.community-first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 20px;
+}
+.start-growing {
+    width: 500px;
+    color: #000;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.community-first > p {
+    color: rgba(0, 0, 0, 0.46);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+}
+.join-community {
+    width: 273px;
+    height: 54px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FC8621;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.join-community:hover {
+    background-color: rgb(155, 181, 58);
+}
+.girlwithbook-div {
+    width: 100%;
+    height: 664px;
+    background: url("girlwithbook.png");
+    position: absolute;
+    z-index: 2;
+    top: 116px;
+    right: 0;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.ellipe-two {
+    width: 94px;
+    height: 94px;
+    flex-shrink: 0;
+    border-radius: 94px;
+    background: url("./Ellipse2.png"), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    right: 426px;
+    top: 0;
+}
+.ellipe-four {
+    width: 94px;
+    height: 94px;
+    flex-shrink: 0;
+    border-radius: 94px;
+    background: url("./Ellipse4.png"), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    right: 104px;
+    top: 49px;
+}
+.ellipe-one {
+    width: 94px;
+    height: 94px;
+    flex-shrink: 0;
+    border-radius: 94px;
+    background: url("./Ellipse1.png"), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    left: 196px;
+    bottom: 151px;
+}
+.ellipe-three {
+    width: 94px;
+    height: 94px;
+    flex-shrink: 0;
+    border-radius: 94px;
+    background: url("./Ellipse3.png"), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 300px;
+    bottom: 285px;
+    left: 20px;
+    
+}
+
+
+section, .newsletter, .community {
+    animation: fade linear both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 320px) {
+    .first-section {
+        flex-direction: column;
+        margin-top: 300px;
+    }
+    .first-section-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .first-section-div-second-text-div, .third-section-div-first-text-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .first-section-btn{
+        width: 90%;
+        text-align: start;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section-div-first-text-div, .second-section-div-first-text-div, .third-section-div-first-text-div {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section-baby, .second-section-girl, .third-section-girl {
+        width: 100%;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section-div {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .list {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .second-section {
+        flex-direction: column;
+        margin-top: 500px;
+    }
+    .second-section-div-first-text-div, .list, .third-section-girl {
+        margin-top: 40px;
+    }
+    .third-section {
+        flex-direction: column;
+        margin-top: 410px;
+    }
+    .newsletter {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 300px;
+    }
+    .newsletter > input {
+        width: 60%;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .newsletter > button{
+        width: 50%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .third-section-girl, .second-section-girl, .first-section-baby {
+        min-width: 100%;
+        background-size: cover;
+    }
+    .start-growing {
+        min-width: 100%;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-align {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .follow-us-div, .useful-link-div, .contacts-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+    }
+    .community {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .start-growing {
+        width: 100%;
+    }
+    .ellipe-four, .ellipe-one, .ellipe-three, .ellipe-two {
+        display: none;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .first-section {
+        flex-direction: column;
+        margin-top: 250px;
+    }
+    .first-section-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .first-section-div-second-text-div, .third-section-div-first-text-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .first-section-btn{
+        width: 90%;
+        text-align: start;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section-div-first-text-div, .second-section-div-first-text-div, .third-section-div-first-text-div {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section-baby, .second-section-girl, .third-section-girl {
+        width: 100%;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section-div {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .list {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .second-section {
+        flex-direction: column;
+        margin-top: 400px;
+    }
+    .second-section-div-first-text-div, .list, .third-section-girl {
+        margin-top: 40px;
+    }
+    .third-section {
+        flex-direction: column;
+        margin-top: 350px;
+    }
+    .newsletter {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 200px;
+    }
+    .newsletter > input {
+        width: 60%;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .newsletter > button{
+        width: 50%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .third-section-girl, .second-section-girl, .first-section-baby {
+        min-width: 100%;
+        background-size: cover;
+    }
+    .start-growing {
+        min-width: 100%;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: -120px;
+        padding-top: 20px;
+    }
+    .footer-align {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .follow-us-div, .useful-link-div, .contacts-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+    }
+    .community {
+        width: 100%;
+        margin-top: -60px;
+    }
+    .start-growing {
+        width: 100%;
+    }
+    .ellipe-four, .ellipe-one, .ellipe-three, .ellipe-two {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .first-section {
+        flex-direction: column;
+        margin-top: 250px;
+    }
+    .first-section-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .first-section-div-second-text-div, .third-section-div-first-text-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .first-section-btn{
+        width: 90%;
+        text-align: start;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section-div-first-text-div, .second-section-div-first-text-div, .third-section-div-first-text-div {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section-baby, .second-section-girl, .third-section-girl {
+        width: 100%;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section-div {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .list {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .second-section {
+        flex-direction: column;
+        margin-top: 300px;
+    }
+    .second-section-div-first-text-div, .list, .third-section-girl {
+        margin-top: 40px;
+    }
+    .third-section {
+        flex-direction: column;
+        margin-top: 210px;
+    }
+    .newsletter {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 120px;
+    }
+    .newsletter > input {
+        width: 60%;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .newsletter > button{
+        width: 50%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .third-section-girl, .second-section-girl, .first-section-baby {
+        min-width: 100%;
+        background-size: cover;
+    }
+    .start-growing {
+        min-width: 100%;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: -120px;
+        padding-top: 20px;
+    }
+    .footer-align {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .follow-us-div, .useful-link-div, .contacts-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+    }
+    .community {
+        width: 100%;
+        margin-top: -70px;
+    }
+    .start-growing {
+        width: 100%;
+    }
+    .ellipe-four, .ellipe-one, .ellipe-three, .ellipe-two {
+        display: none;
+    }
+}
+
+
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .first-section {
+        flex-direction: column;
+        margin-top: 200px;
+    }
+    .first-section-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .first-section-div-second-text-div, .third-section-div-first-text-div {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .first-section-btn{
+        width: 90%;
+        text-align: start;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section-div-first-text-div, .second-section-div-first-text-div, .third-section-div-first-text-div {
+        width: 100%;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section-baby, .second-section-girl, .third-section-girl {
+        width: 100%;
+        background-size: cover;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .first-section-div {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .list {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .second-section {
+        flex-direction: column;
+        margin-top: 450px;
+    }
+    .second-section-div-first-text-div, .list, .third-section-girl {
+        margin-top: 40px;
+    }
+    .third-section {
+        flex-direction: column;
+        margin-top: 400px;
+    }
+    .newsletter {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-top: 250px;
+    }
+    .newsletter > input {
+        width: 60%;
+        margin-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .newsletter > button{
+        width: 50%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .third-section-girl, .second-section-girl, .first-section-baby {
+        min-width: 100%;
+        background-size: cover;
+        height: 600px;
+    }
+    .start-growing {
+        min-width: 100%;
+    }
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-top: -20px;
+        padding-top: 20px;
+    }
+    .footer-align {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .follow-us-div, .useful-link-div, .contacts-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        width: 100%;
+    }
+    .community {
+        width: 100%;
+        margin-top: 10px;
+    }
+    .start-growing {
+        width: 100%;
+    }
+}
+
